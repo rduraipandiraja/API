@@ -1,0 +1,177 @@
+<config>
+	<configurationFile>
+			
+		<!-- CashkaroconfigurationFile -->
+		<!-- <configuration_urls>
+	
+			<partner>    					cashkaro  									</partner>
+			<environment>  					beta	  									</environment>
+						
+			<frontend_url>     				https://cashkaro.iamsavings.co.uk    		</frontend_url>
+			<admin_url>  	   				https://admin.iamsavings.co.uk    			</admin_url>
+			
+			<app_domain_url>    			http://ckapp.iamsavings.co.uk				</app_domain_url> 
+			<dsk_domain_url>    			http://ckdesk.iamsavings.co.uk				</dsk_domain_url>
+			
+			<facebook_url>	 				https://developers.facebook.com				</facebook_url>
+			
+			<facebook_tools_url>			/tools/explorer/							</facebook_tools_url>
+			
+			<facebook_app_url>	 			/apps/										</facebook_app_url>
+			
+			<facebook_testuser_url>	 		/roles/test-users/							</facebook_testuser_url>
+			
+			<facebook_id>	 				127265737470573								</facebook_id>
+						
+			<desk_auth_type>				noAuth										</desk_auth_type>
+			<app_auth_type>					appVersion									</app_auth_type>
+			
+			<app_version>					1.5											</app_version>
+			
+			<app>							app											</app>
+			<desk>							desktop										</desk>
+			
+			<dsk_username> 																</dsk_username>
+			<dsk_password> 																</dsk_password>
+			
+			<app_username> 																</app_username>
+			<app_password> 																</app_password>
+			
+			<createlink_username> 			beta_ek_earn_link_internal					</createlink_username>
+			<createlink_password> 			ppounds_basicauth							</createlink_password>
+			
+			<admin_username> 				dev											</admin_username>
+			<admin_password> 				ppbetaadmin!@3S								</admin_password>
+			
+			<facebook_username> 			dev@pouringpounds.com						</facebook_username>
+			<facebook_password> 			cNRqdDdJ$yLQF4								</facebook_password>
+			
+			<otp_flag> 						enable										</otp_flag>
+			
+			<dropDown>    					Cashkaro									</dropDown>
+			
+			<currencyType>    				INR											</currencyType>
+			
+			<create_sharelink>				disable										</create_sharelink>
+			
+			<username>	    				disable										</username>
+					
+		</configuration_urls> -->
+		
+		<!-- PouringPoundsconfigurationFile -->
+		<configurationFile>
+	
+			<partner>    					pouringpounds								</partner>
+			<environment>  					beta	  									</environment>
+						
+			<frontend_url>     				http://zobucks.com						   	</frontend_url>
+			<admin_url>  	   				http://admin.zobucks.com		 			</admin_url>
+			
+			<app_domain_url>    														</app_domain_url> 
+			<dsk_domain_url>    			http://zbs-sgdesk.iamsavings.co.uk			</dsk_domain_url>
+			
+			<facebook_url>	 				https://developers.facebook.com				</facebook_url>
+			
+			<facebook_tools_url>			/tools/explorer/							</facebook_tools_url>
+			
+			<facebook_app_url>	 			/apps/										</facebook_app_url>
+			
+			<facebook_testuser_url>	 		/roles/test-users/							</facebook_testuser_url>
+			
+			<facebook_id>	 				153833152061614								</facebook_id>
+						
+			<desk_auth_type>				noAuth										</desk_auth_type>
+			<app_auth_type>																</app_auth_type>
+			
+			<app_version>																</app_version>
+			
+			<app>																		</app>
+			<desk>							desktop										</desk>
+			
+			<dsk_username> 																</dsk_username>
+			<dsk_password> 																</dsk_password>
+			
+			<app_username> 																</app_username>
+			<app_password> 																</app_password>
+			
+			<createlink_username> 														</createlink_username>
+			<createlink_password> 														</createlink_password>
+			
+			<admin_username> 				tester										</admin_username>
+			<admin_password> 				PPSck@12345asdf								</admin_password>
+			
+			<facebook_username> 			dev@pouringpounds.com						</facebook_username>
+			<facebook_password> 			cNRqdDdJ$yLQF4								</facebook_password>
+			
+			<otp_flag> 						disable										</otp_flag>
+			
+			<dropDown>    					Zobucks										</dropDown>
+			
+			<currencyType>    				USD											</currencyType>
+			
+			<create_sharelink>				disable										</create_sharelink>
+			
+			<username>	    				enable										</username>
+					
+		</configurationFile>
+		
+		<!-- EarnkaroconfigurationFile -->
+		<!-- <configurationFile>
+	
+			<partner>    					earnkaro  									</partner>
+			<environment>  					beta	  									</environment>
+						
+			<frontend_url>     				https://earnkaro.iamsavings.co.uk    		</frontend_url>
+			<admin_url>  	   				https://admin.iamsavings.co.uk    			</admin_url>
+			
+			<app_domain_url>    			http://earnkaroapp.iamsavings.co.uk			</app_domain_url> 
+			<dsk_domain_url>    			http://earnkaroapp.iamsavings.co.uk			</dsk_domain_url>
+			
+			<facebook_url>	 				https://developers.facebook.com				</facebook_url>
+			
+			<facebook_tools_url>			/tools/explorer/							</facebook_tools_url>
+			
+			<facebook_app_url>	 			/apps/										</facebook_app_url>
+			
+			<facebook_testuser_url>	 		/roles/test-users/							</facebook_testuser_url>
+			
+			<facebook_id>	 				377436999722358								</facebook_id>
+						
+			<desk_auth_type>				noAuth										</desk_auth_type>
+			<app_auth_type>					appVersion									</app_auth_type>
+			
+			<app_version>					1.5											</app_version>
+			
+			<app>							app											</app>
+			<desk>							desktop										</desk>
+			
+			<dsk_username> 																</dsk_username>
+			<dsk_password> 																</dsk_password>
+			
+			<app_username> 																</app_username>
+			<app_password> 																</app_password>
+			
+			<createlink_username> 			beta_ek_earn_link_internal					</createlink_username>
+			<createlink_password> 			ppounds_basicauth							</createlink_password>
+			
+			<admin_username> 				dev											</admin_username>
+			<admin_password> 				ppbetaadmin!@3S								</admin_password>
+			
+			<facebook_username> 			dev@pouringpounds.com						</facebook_username>
+			<facebook_password> 			cNRqdDdJ$yLQF4								</facebook_password>
+			
+			<otp_flag> 						enable										</otp_flag>
+			
+			<dropDown>    					EarnKaro									</dropDown>
+			
+			<currencyType>    				INR											</currencyType>
+			
+			<create_sharelink>				enable										</create_sharelink>
+			
+			<username>	    				disable										</username>
+					
+		</configurationFile> -->
+	
+	</configurationFile>
+	
+</config>

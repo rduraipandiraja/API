@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10" parallel="tests" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.ppa.api.base.AnnotationTransformer" />
+	</listeners>
+
+	<test thread-count="1" name="SignUpOTPAndSignUpV1WithOTPTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.SignUpOTPTestSuite" />
+			<class name="com.ppa.api.testsuites.users.SignUpV1WithOTPTestSuite" />
+		</classes>
+
+	</test>
+
+	  <test thread-count="1" name="UserSignUpTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.UserSignUpTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="UserLoginTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.UserLoginTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="FBSignInV1AndFBSignUpV1WithOTPTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.FBSignUpV1WithOTPTestSuite" />
+			<class name="com.ppa.api.testsuites.users.FBLoginV1TestSuite" />
+		</classes>
+
+	</test> 
+
+	<test thread-count="1" name="ForgotPasswordTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.ForgotPasswordTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="RefreshTokenTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.RefreshTokenTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="UserProfileGetTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.UsersProfileGetTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="UserProfilePutTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.UsersProfilePutTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="UsersChangePasswordTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.UsersChangePasswordTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="CreateNewOtpTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.CreateNewOtpTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="ResendOtpTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.ResendOtpTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="VerifyOtpTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.VerifyOtpTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="TransactionOtpTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.TransactionOtpTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="TransactionOtpVerifyTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.TransactionOtpVerifyTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="LogoutGetTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.LogoutGetTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="LogoutPostTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.LogoutPostTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="DeviceInfoUpdateTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.DeviceInfoUpdateTestSuite" />
+		</classes>
+
+	</test>
+
+	<!-- <test thread-count="1" name="MyEarningsTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.MyEarningsTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="MyEarningsCashbackTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.MyEarningsCashbackTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="MyEarningsRewardsTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.MyEarningsRewardsTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="MyEarningsReferralTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.MyEarningsReferralTestSuite" />
+		</classes>
+
+	</test>
+
+	 <test thread-count="1" name="ReferralNetworkTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.ReferralNetworkTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="ExitClickTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.ExitClickTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="RaiseTicketTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.RaiseTicketTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="TicketsTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.TicketsTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="TicketDetailsTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.TicketDetailsTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="TicketReplyTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.TicketReplyTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="WriteTestimonialsTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.WriteTestimonialsTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="TestimonialsReadTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.TestimonialsReadTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="MyActivityTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.MyActivityTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="MySharedActivitiesTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.MySharedActivitiesTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="CreateShareLinkTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.CreateShareLinkTestSuite" />
+		</classes>
+
+	</test>
+
+	<test thread-count="1" name="CreateExternalProfitLinkTestSuite" parallel="methods">
+
+		<classes>
+			<class name="com.ppa.api.testsuites.users.CreateExternalProfitLinkTestSuite" />
+		</classes>
+
+	</test> -->
+
+</suite> <!-- Suite -->

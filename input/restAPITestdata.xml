@@ -1,0 +1,881 @@
+<testdata>
+	<restAPITestdata>
+
+	<header>
+		<accept_key> 						Accept	    										</accept_key>
+		<accept_value> 						application/vnd.api+json							</accept_value>
+		<app_version_key> 					x-chkr-app-version	    							</app_version_key>
+		<app_Version_value> 				1.5													</app_Version_value>
+		<auth_Key> 							Authorization		    							</auth_Key>
+		<content_type_key> 					Content-Type		    							</content_type_key>
+		<content_type_value> 				application/vnd.api+json							</content_type_value>
+		<content_type_multipart_value>		multipart/form-data									</content_type_multipart_value>
+		<api_Key> 							ppounds_keyauth		    							</api_Key>
+		
+		
+		<auth_invalid_value>		 		Bearer bearer										</auth_invalid_value>
+		<accept_invalid_value> 				application/json									</accept_invalid_value>
+		<content_type_invalid_value> 		application/json									</content_type_invalid_value>
+	</header>
+
+	<Basepath>
+		<Basepath> 							/v1		    										</Basepath>
+	</Basepath>
+
+	<endpoint>
+		<helper_access_token> 				/token	    										</helper_access_token>
+		<signup_otp> 						/signupotp    										</signup_otp>
+		<signup_v1_otp> 					/signupV1    										</signup_v1_otp>
+		<fb_signup_v1_otp> 					/fbsignupV1    										</fb_signup_v1_otp>
+		<fb_login> 							/fbloginV1    										</fb_login>
+		<user_signup> 						/signup    											</user_signup>
+		<user_login> 						/login    											</user_login>
+		<forgotPassword>					/forgotpassword										</forgotPassword>
+		<logout>							/logout												</logout>
+		<profile>							/profile											</profile>
+		<change_password>					/changepassword										</change_password>
+		<refresh_token>						/refreshtoken										</refresh_token>
+		<users> 							/users												</users>
+		<generateotp> 						/generateotp										</generateotp>
+		<resendotp> 						/resendotp											</resendotp>
+		<transaction_otp> 					/sendotp											</transaction_otp>
+		<transaction_otp_verify>			/verify												</transaction_otp_verify>
+		<myearnings> 						/earnings											</myearnings>
+		<cashback> 							/cashbacks											</cashback>
+		<rewards> 							/rewards											</rewards>
+		<referrals> 						/referrals											</referrals>
+		<sharelink> 						/createearnlink										</sharelink>
+		<verify_otp> 						/verifyotp											</verify_otp>
+		<device_info> 						/deviceinfo    										</device_info>
+		<payment> 							/payment    										</payment>
+		<exitClick> 						/trackingid    										</exitClick>
+		<tickets> 							/tickets    										</tickets>
+		<referralnetworks> 					/referralnetworks    								</referralnetworks>
+		<testimonials> 						/testimonials    									</testimonials>
+		<recentclicks> 						/recentclicks    									</recentclicks>
+		<mysharedactivities> 				/mysharedactivities									</mysharedactivities>
+		<createexternalearnlinknew> 		/createexternalearnlinknew							</createexternalearnlinknew>
+	</endpoint>	
+
+	<signup_getcode_url>
+		<basepath> 							/getcode.php										</basepath>
+		<queryparamOne_key>					page			    								</queryparamOne_key>
+		<queryparamOne_value> 				signupotp_app			    						</queryparamOne_value>
+		<fb_queryparamOne_value> 			reset_fbid			    							</fb_queryparamOne_value>
+		<queryparamtwo_key> 				mobile			    								</queryparamtwo_key>
+		<fb_queryparamtwo_key> 				email			    								</fb_queryparamtwo_key>
+	</signup_getcode_url>
+
+	<devicetype>
+			<desktop> 	    				?device=Desktop	    								</desktop>
+			<mobile> 	    				?device=Mobile	    								</mobile>
+			<tablet> 	    				?device=Tablet    									</tablet>
+			<app> 	    					?device=App    										</app>
+			
+			<invalid_desktop> 	    		?device=Desk    									</invalid_desktop>
+	</devicetype>
+
+	<credentials>
+			<username> 	    				testuser	    									</username>
+			<password> 	  	  				ppounds		    									</password>
+			<refID> 	  	  				17		    										</refID>
+			<fb_username> 	    			Pouringp	    									</fb_username>
+			<fb_email> 	    				dev@pouringpounds.com								</fb_email>
+	</credentials>
+
+	<retailer_urls>
+			<visit_retailer_dsk>			/visitretailer/										</visit_retailer_dsk>
+			<visit_retailer_app>			/visitretailer/app/									</visit_retailer_app>
+			<id> 	  	  					?id=		    									</id>
+			<share_id> 	  	  				shareid=	    									</share_id>
+			<store_id> 	  	  				1			    									</store_id>
+	</retailer_urls>
+
+	<myEarningsCashback>
+			<type>							myearnings_cashback									</type>
+	</myEarningsCashback>
+
+	<others>
+			<emptyValue>																		</emptyValue>
+			<double_quote>					""													</double_quote>
+	</others>
+
+	<statuses>
+			<status_200>					200													</status_200>
+			<status_201>					201													</status_201>
+			<status_400>					400													</status_400>
+			<status_401>					401													</status_401>
+			<status_406>					406													</status_406>
+			<status_415>					415													</status_415>
+			<status_422>					422													</status_422>
+	</statuses>
+
+	<signUpV1WithOTP>
+			<type>							auth												</type>
+			<status>						422													</status>
+			<code>							422													</code>
+			<title>							Invalid Attribute									</title>
+			
+			<email_detail_mandatory>		The email field is required.						</email_detail_mandatory>
+			<email_detail_existing>			An account with this Email ID already exists!		</email_detail_existing>
+			<email_detail_already_taken>	The email has already been taken.					</email_detail_already_taken>
+			<email_detail_valid_email>		The email must be a valid email address.			</email_detail_valid_email>
+			<email_detail_least_char>		The email must be at least 5 characters.			</email_detail_least_char>
+			<email_detail_more_char>		The email may not be greater than 50 characters.	</email_detail_more_char>
+			<email_pointer>					/data/attributes/email								</email_pointer>
+			
+			<pwd_detail_mandatory>			The password field is required.						</pwd_detail_mandatory>
+			<pwd_detail_least_char>			The password must be at least 6 characters.			</pwd_detail_least_char>
+			<pwd_detail_more_char>			The password may not be greater than 20 characters.	</pwd_detail_more_char>
+			<pwd_pointer>					/data/attributes/password							</pwd_pointer>
+			
+			<fullname_detail_mandatory>		The fullname field is required.						</fullname_detail_mandatory>
+			<fullname_detail_least_char>	The fullname must be at least 2 characters.			</fullname_detail_least_char>
+			<fullname_detail_more_char>		The fullname may not be greater than 50 characters.	</fullname_detail_more_char>
+			<fullname_pointer>				/data/attributes/fullname							</fullname_pointer>
+			
+			<mobilenumber_detail_mandatory>	The mobile number field is required.				</mobilenumber_detail_mandatory>
+			<mobilenumber_detail_invalid>	The mobile number format is invalid.				</mobilenumber_detail_invalid>
+			<mobilenumber_detail_already>	The mobile number has already been taken.			</mobilenumber_detail_already>
+			<mobilenumber_detail_existing>	Number already in use. Please enter different number.</mobilenumber_detail_existing>
+			<mobilenumber_detail_least_char>The mobile number must be 10 digits.				</mobilenumber_detail_least_char>
+			<mobilenumber_pointer>			/data/attributes/mobile_number						</mobilenumber_pointer>
+			
+			<otp_status>					400													</otp_status>
+			<otp_code>						7001												</otp_code>
+			<otp_title>						OTP was expired										</otp_title>
+			<otp_detail>					OTP was expired										</otp_detail>
+			<otp_detail_mandatory>			The otp field is required.							</otp_detail_mandatory>
+			<otp_detail_least_char>			The otp must be 6 digits.							</otp_detail_least_char>
+			<otp_pointer>					/data/attributes/otp								</otp_pointer>
+			<otp_parameter>					otp													</otp_parameter>
+			
+			<guid_detail_mandatory>			The otp guid field is required.						</guid_detail_mandatory>
+			<guid_detail_least_char>		The otp must be 6 digits.							</guid_detail_least_char>
+			<guid_pointer>					/data/attributes/otp								</guid_pointer>
+			
+			<ip_detail_mandatory>			The ip address field is required.					</ip_detail_mandatory>
+			<ip_detail_Valid>				The ip address must be a valid IP address.			</ip_detail_Valid>
+			<ip_pointer>					/data/attributes/ip_address							</ip_pointer>
+			
+			<guid_status>					400													</guid_status>
+			<guid_code>						7002												</guid_code>
+			<guid_title>					Invalid OTP code									</guid_title>
+			<guid_detail>					Invalid OTP code									</guid_detail>
+			<guid_parameter>				otp													</guid_parameter>
+			
+			<deviceinfo_status>				422													</deviceinfo_status>
+			<deviceinfo_code>				2006												</deviceinfo_code>
+			<deviceinfo_title1>				The device info must be a valid data.				</deviceinfo_title1>
+			<deviceinfo_detail1>			The device info must be a valid data.				</deviceinfo_detail1>
+			<deviceinfo_title>				device info field is required						</deviceinfo_title>
+			<deviceinfo_detail>				The device info field value is required				</deviceinfo_detail>
+			<deviceinfo_parameter>			device_info											</deviceinfo_parameter>
+			<deviceinfo_pointer>			/data/attributes/device_info						</deviceinfo_pointer>
+			
+			<device_detail>					The device field is required.						</device_detail>
+			<device_parameter>				device												</device_parameter>
+			
+			<ipaddress>						10.0.0.114											</ipaddress>
+			<invalid_ipaddress>				10.10.10.101010										</invalid_ipaddress>
+			
+			<fcm_id>						fcm_id_Value										</fcm_id>
+			<device_unique_id>				device_unique_id_value								</device_unique_id>
+			<imei_number>					imei_number_value									</imei_number>
+			
+			<type_status>					422													</type_status>
+			<type_title>					Invalid Attribute									</type_title>
+			<type_detail>					A valid resource type must be provided.				</type_detail>
+			<type_pointer>					/data/type/											</type_pointer>
+			
+			<status_invalid_device>			400													</status_invalid_device>
+			<code_invalid_device>			11000												</code_invalid_device>
+			<title_invalid_device>			Invalid Device										</title_invalid_device>
+			<detail_invalid_device>			Invalid Device => Desk								</detail_invalid_device>
+			<parameter_invalid_device>		device												</parameter_invalid_device>
+	</signUpV1WithOTP>
+
+	<signUpOTP>
+			<type>							user_otp											</type>
+			
+			<type_status>					422													</type_status>
+			<type_title>					Invalid Attribute									</type_title>
+			<type_detail>					A valid resource type must be provided.				</type_detail>
+			<type_pointer>					/data/type/											</type_pointer>
+	</signUpOTP>
+
+	<signUpOTP>
+			<message>						Unauthorized																		</message>
+			<message_invalid_json>			Bad token; invalid JSON																</message_invalid_json>
+			
+			<error_about>					http://jsonapi.org/format/#content-negotiation-clients								</error_about>
+			<error_status>					415																					</error_status>
+			<error_title>					Unsupported Media Type																</error_title>
+			<error_detail>					Content-Type of a request containing JSON data must be application/vnd.api+json		</error_detail>
+			
+			<error_status_406>				406																					</error_status_406>
+			<error_title_notacceptable>		Not Acceptable																		</error_title_notacceptable>
+			<error_detail_accept_header>	Accept header must accept application/vnd.api+json at least once without parameters	</error_detail_accept_header>
+	</signUpOTP>
+
+	<verify_otp>
+			<type>							user_otp											</type>
+	</verify_otp>
+
+	<user_name>
+			<username_error_status>			400													</username_error_status>
+			<username_error_code>			2000												</username_error_code>
+			<username_error_title>			Invalid User Info.									</username_error_title>
+			<username_error_detail>			Invalid User Info.									</username_error_detail>
+			<username_error_pointer>		/data/attributes/									</username_error_pointer>
+			
+			<username_detail_mandatory>		The username field is required.						</username_detail_mandatory>
+			
+			<username_detail_valid>			The username must be a valid email address.			</username_detail_valid>
+			<username_detail_least_char>	The username must be at least 2 characters.			</username_detail_least_char>
+			<username_detail_more_char>		The username may not be greater than 50 characters.	</username_detail_more_char>
+			<username_pointer>				/data/attributes/username							</username_pointer>
+	</user_name>
+
+	<FBsignUpV1WithOTP>
+			<error_status>					400													</error_status>
+			<error_code>					2003												</error_code>
+			<error_title>					Invalid FB access token								</error_title>
+			<error_detail>					Invalid FB access token								</error_detail>
+			<error_pointer>					/data/attributes/fb_access_token					</error_pointer>
+			
+			<fbaccessToken_detail_mandatory>The fb access token field is required.				</fbaccessToken_detail_mandatory>
+			<fbaccessToken_pointer>			/data/attributes/fb_access_token					</fbaccessToken_pointer>
+			
+			<fb_userid_detail_mandatory>	The fb user id field is required.					</fb_userid_detail_mandatory>
+			<fb_userid_pointer>				/data/attributes/fb_user_id							</fb_userid_pointer>
+	</FBsignUpV1WithOTP>
+
+	<FBLoginV1>
+			<error_code>					11003												</error_code>
+			<error_title>					Sorry! Something went wrong, Please try again later	</error_title>
+	</FBLoginV1>
+
+	<forgot_password>
+			<type>							user																		</type>
+			<status_no_active_account>		400																			</status_no_active_account>
+			<code_no_active_account>		6000																		</code_no_active_account>
+			<title_no_active_account>		Sorry, there is no active account which match with this e-mail address.		</title_no_active_account>
+			<detail_no_active_account>		Sorry, there is no active account which match with this e-mail address:		</detail_no_active_account>
+			<parameter_no_active_account>	email																		</parameter_no_active_account>
+			
+			<message>						New Password has been sent your Email.										</message>
+	</forgot_password>
+
+	<refresh_token>
+			<status_invalid_refresh_token>		401											</status_invalid_refresh_token>
+			<code_invalid_refresh_token>		401											</code_invalid_refresh_token>
+			<title_invalid_refresh_token>		Invalid refresh token.						</title_invalid_refresh_token>
+			<detail_invalid_refresh_token>		Invalid refresh token.						</detail_invalid_refresh_token>
+			<parameter_invalid_refresh_token>	/data/attributes/refresh_token				</parameter_invalid_refresh_token>
+			
+			<title_invalid_token>				Invalid Token.								</title_invalid_token>
+			<detail_invalid_token>				Invalid Token.								</detail_invalid_token>
+	</refresh_token>
+
+	<logout>
+			<type>								logout										</type>
+			<message>							User logout.								</message>
+			
+			<error_status_fcm_id>				422											</error_status_fcm_id>
+			<error_title_fcm_id>				Invalid Attribute							</error_title_fcm_id>
+			<error_detail_fcm_id>				The fcm id field is required.							</error_detail_fcm_id>
+			<error_pointer_fcm_id>				/data/attributes/fcm_id						</error_pointer_fcm_id>
+			
+			<error_status_deviceunique_id>		422											</error_status_deviceunique_id>
+			<error_title_deviceunique_id>		Invalid Attribute							</error_title_deviceunique_id>
+			<error_detail_deviceunique_id>		The device unique id field is required.		</error_detail_deviceunique_id>
+			<error_pointer_deviceunique_id>		/data/attributes/device_unique_id			</error_pointer_deviceunique_id>
+	</logout>
+
+	<login>
+			<error_status_invalid_user>			400													</error_status_invalid_user>
+			<error_code_invalid_user>			2000												</error_code_invalid_user>
+			<error_title_invalid_user>			Invalid User Info.									</error_title_invalid_user>
+			<error_detail_invalid_user>			Invalid User Info.									</error_detail_invalid_user>
+			<error_pointer_invalid_user>		/data/attributes/									</error_pointer_invalid_user>
+			
+			<error_status_account_blocked>		400													</error_status_account_blocked>
+			<error_code_account_blocked>		2001												</error_code_account_blocked>
+			<error_title_account_blocked>		Your account has not been activated or is blocked.	</error_title_account_blocked>
+			<error_detail_account_blocked>		Your account has not been activated or is blocked.	</error_detail_account_blocked>
+			<error_pointer_account_blocked>		/data/attributes/									</error_pointer_account_blocked>
+	</login>
+
+	<user_profile_get>
+			<status_invalid_include_field>		400													</status_invalid_include_field>
+			<code_invalid_include_field>		11004												</code_invalid_include_field>
+			<title_invalid_include_field>		Invalid Include Field								</title_invalid_include_field>
+			<detail_invalid_include_field>		Following include fields are invalid: partner		</detail_invalid_include_field>
+			<parameter_invalid_include_field>	include												</parameter_invalid_include_field>
+			
+			<type>								user												</type>
+			<type_partner>						partner												</type_partner>
+			<partner_info>						?include=partnerinfo								</partner_info>
+			<invalid_partner_info>				?include=partner									</invalid_partner_info>
+			<enabled_newsletter_yes>			yes													</enabled_newsletter_yes>
+			<enabled_newsletter_no>				no													</enabled_newsletter_no>
+			<enabled_ref_earnings_notification_yes>	yes												</enabled_ref_earnings_notification_yes>
+			<enabled_ref_earnings_notification_no>	no												</enabled_ref_earnings_notification_no>
+	</user_profile_get>
+
+	<user_profile_put>
+			<status_422>										422											</status_422>
+			<title_invalid_attribute>							Invalid Attribute							</title_invalid_attribute>
+			
+			<detail_valid_type>									A valid resource type must be provided.		</detail_valid_type>
+			<pointer_valid_type>								/data/type									</pointer_valid_type>
+			
+			<detail_full_name>									The fullname field is required.				</detail_full_name>
+			<pointer_full_name>									/data/attributes/fullname					</pointer_full_name>
+			
+			<detail_full_name_format>							The fullname format is invalid.				</detail_full_name_format>
+			<pointer_full_name_format>							/data/attributes/fullname					</pointer_full_name_format>
+			
+			<fullname_detail_least_char>						The fullname must be at least 2 characters.			</fullname_detail_least_char>
+			<fullname_detail_more_char>							The fullname may not be greater than 50 characters.	</fullname_detail_more_char>
+			
+			<detail_enable_newsletter_field_required>			The enable newsletter field is required.	</detail_enable_newsletter_field_required>
+			<pointer_enable_newsletter_field_required>			/data/attributes/enable_newsletter			</pointer_enable_newsletter_field_required>
+			
+			<detail_enable_newsletter_field_invalid>			The selected enable newsletter is invalid.	</detail_enable_newsletter_field_invalid>
+			<pointer_enable_newsletter_field_invalid>			/data/attributes/enable_newsletter			</pointer_enable_newsletter_field_invalid>
+			
+			<detail_enable_referral_earnings_required>			The enable referral earnings notification field is required.	</detail_enable_referral_earnings_required>
+			<pointer_enable_referral_earnings_required>			/data/attributes/enable_referral_earnings_notification			</pointer_enable_referral_earnings_required>
+			
+			<detail_enable_referral_earnings_invalid>			The selected enable referral earnings notification is invalid.	</detail_enable_referral_earnings_invalid>
+			<pointer_enable_referral_earnings_invalid>			/data/attributes/enable_referral_earnings_notification			</pointer_enable_referral_earnings_invalid>
+			
+			<type>												user										</type>
+			
+			<enabled_newsletter_yes>							yes											</enabled_newsletter_yes>
+			<enabled_newsletter_no>								no											</enabled_newsletter_no>
+			
+			<enabled_ref_earnings_notification_yes>				yes											</enabled_ref_earnings_notification_yes>
+			<enabled_ref_earnings_notification_no>				no											</enabled_ref_earnings_notification_no>
+			
+			<message>											Profile updated								</message>
+			
+			<status_400>										400																			</status_400>
+			<code_11007>										11007																		</code_11007>
+			<title_please_write_to_dev>							To change your email/mobile number please write to dev@pouringpounds.com	</title_please_write_to_dev>
+			<detail_please_write_to_dev>						To change your email/mobile number please write to dev@pouringpounds.com	</detail_please_write_to_dev>
+			<pointer_please_write_to_dev>						/data/attributes/new_email													</pointer_please_write_to_dev>
+	</user_profile_put>
+
+	<user_change_password>
+			<status_422>										422											</status_422>
+			<title_invalid_attribute>							Invalid Attribute							</title_invalid_attribute>
+			
+			<detail_valid_type>									A valid resource type must be provided.		</detail_valid_type>
+			<pointer_valid_type>								/data/type									</pointer_valid_type>
+			
+			<detail_current_password_required>					The current password field is required.		</detail_current_password_required>
+			<pointer_current_password_required>					/data/attributes/current_password			</pointer_current_password_required>
+			
+			<detail_current_password_atlease_6_char>			The current password must be at least 6 characters.			</detail_current_password_atlease_6_char>
+			<pointer_current_password_atlease_6_char>			/data/attributes/current_password							</pointer_current_password_atlease_6_char>
+			
+			<detail_current_password_greater_20_char>			The current password may not be greater than 20 characters.	</detail_current_password_greater_20_char>
+			<pointer_current_password_greater_20_char>			/data/attributes/current_password							</pointer_current_password_greater_20_char>
+			
+			<detail_new_password_required>						The new password field is required.							</detail_new_password_required>
+			<pointer_new_password_required>						/data/attributes/new_password								</pointer_new_password_required>
+			
+			<detail_new_password_atlease_6_char>				The new password must be at least 6 characters.				</detail_new_password_atlease_6_char>
+			<pointer_new_password_atlease_6_char>				/data/attributes/new_password								</pointer_new_password_atlease_6_char>
+			
+			<detail_new_password_greater_20_char>				The new password may not be greater than 20 characters.		</detail_new_password_greater_20_char>
+			<pointer_new_password_greater_20_char>				/data/attributes/new_password								</pointer_new_password_greater_20_char>
+			
+			<detail_confirm_password_required>					The confirm password field is required.						</detail_confirm_password_required>
+			<pointer_confirm_password_required>					/data/attributes/confirm_password							</pointer_confirm_password_required>
+			
+			<detail_confirm_password_atlease_6_char>			The confirm password must be at least 6 characters.			</detail_confirm_password_atlease_6_char>
+			<pointer_confirm_password_atlease_6_char>			/data/attributes/new_password								</pointer_confirm_password_atlease_6_char>
+			
+			<detail_confirm_password_greater_20_char>			The confirm password may not be greater than 20 characters.	</detail_confirm_password_greater_20_char>
+			<pointer_confirm_password_greater_20_char>			/data/attributes/new_password								</pointer_confirm_password_greater_20_char>
+			
+			<detail_new_and_confirm_password_match>				The new password and confirm password must match.			</detail_new_and_confirm_password_match>
+			<pointer_new_and_confirm_password_match>			/data/attributes/new_password								</pointer_new_and_confirm_password_match>
+			
+			<status_400>										400															</status_400>
+			<code_4000>											4000														</code_4000>
+			<title_password_doesnot_match>						Your password does not match. Please check and try again.	</title_password_doesnot_match>
+			<detail_password_doesnot_match>						Your password does not match. Please check and try again.	</detail_password_doesnot_match>
+			<pointer_password_doesnot_match>					/data/attributes/current_password							</pointer_password_doesnot_match>
+			
+			<type>												user														</type>
+			
+			<message>											New password updated. 										</message>
+			
+			
+			<status_invalid_content_type>						422														</status_invalid_content_type>
+			<code_invalid_content_type>							11005													</code_invalid_content_type>
+			<title_invalid_content_type>						Invalid type attribute									</title_invalid_content_type>
+			<detail_invalid_content_type>						Invalid type attribute:									</detail_invalid_content_type>
+			<parameter_invalid_content_type>					/data/type/												</parameter_invalid_content_type>
+	</user_change_password>
+
+	<create_new_otp>
+			<mobilenumber_status_existing>						422															</mobilenumber_status_existing>
+			<mobilenumber_code_existing>						2007														</mobilenumber_code_existing>
+			<mobilenumber_title_existing>						Number already in use. Please enter different number.		</mobilenumber_title_existing>
+			<mobilenumber_detail_existing>						Number already in use. Please enter different number.		</mobilenumber_detail_existing>
+			<mobilenumber_pointer_existing>						/data/attributes/mobile_number								</mobilenumber_pointer_existing>
+			
+			<new_otp_generated>									New OTP generated											</new_otp_generated>
+			
+			<code_11007>										11007														</code_11007>
+			<title_write_to_ck>									To change your email/mobile number please write to contact@cashkaro.com</title_write_to_ck>
+	</create_new_otp>
+
+	<resend_otp>
+			<message>											Resend OTP completed										</message>
+	</resend_otp>
+
+	<verify_otp>
+			<message>											OTP verified												</message>
+	</verify_otp>
+
+	<Transaction_otp>
+			<success_message_email>								OTP sent to Email											</success_message_email>
+			<success_message_email_mbl>							OTP sent to Mobile and Email								</success_message_email_mbl>
+			
+			<notification_name>									PAYMENT_REQUEST_OTP											</notification_name>
+			
+			<notification_status>								400															</notification_status>
+			<notification_code>									7005														</notification_code>
+			<notification_title>								Invalid notification name									</notification_title>
+			<notification_detail>								Input notification name is: 								</notification_detail>
+			<notification_pointer>								/data/attributes/notification_name							</notification_pointer>
+	</Transaction_otp>
+
+	<Transaction_otp_verify>
+			<success_message>									OTP verified												</success_message>
+			
+			<otp_guid_status>									400															</otp_guid_status>
+			<otp_guid_code>										7000														</otp_guid_code>
+			<otp_guid_title>									OTP not exist to verify										</otp_guid_title>
+			<otp_guid_detail>									OTP not exist to verify										</otp_guid_detail>
+			<otp_guid_parameter>								otp															</otp_guid_parameter>
+	</Transaction_otp_verify>
+
+	<deviceINFO>
+			<success_message>									Device info updated											</success_message>
+	</deviceINFO>
+
+	<query_parameter>
+			<include_parameter_cb_rw_ref>						?include=cashbacks,rewards,referrals						</include_parameter_cb_rw_ref>
+			<include_parameter_cb_rw>							?include=cashbacks,rewards									</include_parameter_cb_rw>
+			<include_parameter_cb_ref>							?include=cashbacks,referrals								</include_parameter_cb_ref>
+			<include_parameter_rw_ref>							?include=rewards,referrals									</include_parameter_rw_ref>
+			<include_parameter_cb>								?include=cashbacks											</include_parameter_cb>
+			<include_parameter_rw>								?include=rewards											</include_parameter_rw>
+			<include_parameter_ref>								?include=referrals											</include_parameter_ref>
+			<include_parameter_invalid>							?include=cb													</include_parameter_invalid>
+	</query_parameter>
+
+	<myearnings>
+			<typeUser>												user													</typeUser>
+			<ten_thousand>											10000													</ten_thousand>
+			<five_thousand>											5000													</five_thousand>
+			<two_five_hundered>										2500													</two_five_hundered>
+			<thousand>												1000													</thousand>
+			<five_hundered>											500														</five_hundered>
+			<two_fifty>												250														</two_fifty>
+			<seven_fifty>											750														</seven_fifty>
+			<zero>													0.00													</zero>
+			<type_my_earnings_cashback>								myearnings_cashback										</type_my_earnings_cashback>
+			<type_my_earnings_rewards>								myearnings_rewards										</type_my_earnings_rewards>
+			<type_my_earnings_referral>								myearnings_referrals									</type_my_earnings_referral>
+			<type_months>											months													</type_months>
+			<forward_slash>											/														</forward_slash>
+			
+			<cashback>												Cashback												</cashback>
+			<rewards>												Rewards													</rewards>
+				
+			<basepath> 												/getcode.php											</basepath>
+			<queryparamOne_key>										page			    									</queryparamOne_key>
+			<queryparamOne_value> 									add_bonus				    							</queryparamOne_value>
+			<queryparamtwo_key> 									email			    									</queryparamtwo_key>
+			<queryparamthree_key> 									cashback		    									</queryparamthree_key>
+			<queryparamfour_key> 									cashback_type	    									</queryparamfour_key>
+			
+			<status_400>											400														</status_400>
+			<code_11004>											11004													</code_11004>
+			<title_Invalid_Include_Field>							Invalid Include Field									</title_Invalid_Include_Field>
+			<detail_Invalid_Include_Field>							Following include fields are invalid: cb				</detail_Invalid_Include_Field>
+			<parameter_Invalid_Include_Field>						include													</parameter_Invalid_Include_Field>
+			
+			<total_records_zero>									0														</total_records_zero>
+			<total_records>											1														</total_records>
+			<page_number>											1														</page_number>
+			<page_size>												4														</page_size>
+			<pagenumber>											?page[number]=1											</pagenumber>
+			<pagesize>												page[size]=4											</pagesize>
+			<null>													null													</null>
+			
+			<pending>												Pending													</pending>
+			<confirm>												Confirmed												</confirm>
+			<request>												Requested												</request>
+			<paid>													Paid													</paid>
+			<cancel>												Cancelled												</cancel>
+			
+			<signup_bonus>											SIGN-up Bonus											</signup_bonus>
+			<bonus>													Bonus													</bonus>
+	</myearnings>
+
+	<neft_post>
+			<type_neft>												neft													</type_neft>
+			<payment_type>											cashback												</payment_type>
+			<payment_type_rw>										rewards													</payment_type_rw>
+			<password>												ppounds													</password>
+			<payment_method_id>										3														</payment_method_id>
+			<account_holder_name>									TestAutomation											</account_holder_name>
+			<bank_name>												ATM Bank												</bank_name>
+			<branch>												Cashkaro												</branch>
+			<account_number>										12345678910												</account_number>
+			<ifsc_code>												IFSC0004567												</ifsc_code>
+				
+			<basepath> 												/getcode.php											</basepath>
+			<queryparamOne_key>										page			    									</queryparamOne_key>
+			<queryparamOne_value> 									create_cashout			    							</queryparamOne_value>
+			<queryparamtwo_key> 									email			    									</queryparamtwo_key>
+	</neft_post>
+
+	<exitclick>
+			<type_offers>											offers													</type_offers>
+			
+			<basepath> 												/getcode.php											</basepath>
+			<queryparamOne_key>										page			    									</queryparamOne_key>
+			<queryparamOne_value> 									ticket					    							</queryparamOne_value>
+			<queryparamtwo_key> 									id				    									</queryparamtwo_key>
+			<queryparamthree_key> 									date			    									</queryparamthree_key>
+			
+			<type_trackingid> 										trackingid    											</type_trackingid>
+			<null>													null													</null>
+			<method>												POST													</method>
+			
+			<mc_raise_ticket_last_10days_status>					400																					</mc_raise_ticket_last_10days_status>
+			<mc_raise_ticket_last_10days_code>						1003																				</mc_raise_ticket_last_10days_code>
+			<mc_raise_ticket_last_10days_title1>					Missing Ticket claims only for transactions made in the last 10 days				</mc_raise_ticket_last_10days_title1>
+			<mc_raise_ticket_last_10days_detail1>					Missing Ticket claims only for transactions made in the last 10 days:				</mc_raise_ticket_last_10days_detail1>
+			<mc_raise_ticket_last_10days_parameter>					click_date																			</mc_raise_ticket_last_10days_parameter>
+			
+			<invalid_transaction_date_status>						400																					</invalid_transaction_date_status>
+			<invalid_transaction_date_code>							1002																				</invalid_transaction_date_code>
+			<invalid_transaction_date_title1>						Invalid Transaction Date Format														</invalid_transaction_date_title1>
+			<invalid_transaction_date_detail1>						Invalid Transaction Date Format: 2018-0402											</invalid_transaction_date_detail1>
+			<invalid_transaction_date_parameter>					click_date																			</invalid_transaction_date_parameter>
+	</exitclick>
+
+	<raise_ticket>
+			<type_ticket>											ticket														</type_ticket>
+			<message>												Your cashback query has been submitted.						</message>
+			
+			<coupon_code>											couponcode													</coupon_code>
+			<transaction_details>									transaction details											</transaction_details>
+			
+			<error_message_one_more_than_2mb>						The ticket attachment failed to upload.						</error_message_one_more_than_2mb>
+			<error_message_two_more_than_2mb>						The ticket attachment may not be greater than 2048 kilobytes</error_message_two_more_than_2mb>
+			
+			<error_message_diff_file_format>						The ticket attachment must be a file of type: jpeg, png, jpg, gif, pdf.</error_message_diff_file_format>
+			
+			
+			<error_message_transaction_id_25_character>				The transaction id may not be greater than 25 characters.	</error_message_transaction_id_25_character>
+			<error_message_transaction_id_invalid_character>		The transaction id format is invalid.						</error_message_transaction_id_invalid_character>
+			
+			<error_message_total_amount_paid_bva>					The total amount paid must be between 1 and 999999999.		</error_message_total_amount_paid_bva>
+			<error_message_total_amount_must_nos>					The total amount paid must be a number.						</error_message_total_amount_must_nos>
+			<error_message_total_amount_paid_invalid>				The total amount paid format is invalid.					</error_message_total_amount_paid_invalid>
+			
+			<error_message_coupons_code_used_bva>					The coupon code used may not be greater than 15 characters. </error_message_coupons_code_used_bva>
+			<error_message_coupons_code_only_nos_letter>			The coupon code used may only contain letters and numbers. 	</error_message_coupons_code_only_nos_letter>
+			
+			
+			<error_message_transaction_details_invalid_character>		The transaction details format is invalid.						</error_message_transaction_details_invalid_character>
+			<error_msg_transaction_details_not_more_than_750character>	The transaction details may not be greater than 750 characters.	</error_msg_transaction_details_not_more_than_750character>
+			
+			
+			<error_message_transactionid_required>					The transaction id field is required.					 	</error_message_transactionid_required>
+			
+			<error_message_total_amount_paid_required>				The total amount paid field is required.				 	</error_message_total_amount_paid_required>
+			
+			<error_message_transaction_details_required>			The transaction details field is required.					</error_message_transaction_details_required>
+			
+			<error_status_400>										400 														</error_status_400>
+			<error_code_1009>										1009 														</error_code_1009>
+			<error_title_invalid_attachment>						Invalid Attachment File 									</error_title_invalid_attachment>
+			<error_detail_invalid_attachment>						Invalid Attachment File 									</error_detail_invalid_attachment>
+			<error_pointer_invalid_attachment>						/data/attributes/ticket_attachment 							</error_pointer_invalid_attachment>
+			
+			<error_code_1007>										1007 																	</error_code_1007>
+			<error_title_transaction_already_tracked>				Cashback for this transaction has already tracked in your account. 		</error_title_transaction_already_tracked>
+			<error_detail_transaction_already_tracked>				Cashback for this transaction has already tracked in your account.:	 	</error_detail_transaction_already_tracked>
+			<error_parameter_transaction_already_tracked>			tracking_id									 							</error_parameter_transaction_already_tracked>
+			
+			<error_code_1008>										1008 																	</error_code_1008>
+			<error_title_invalid_ticket_details>					Missing Ticket not added due to invalid ticket details. 			</error_title_invalid_ticket_details>
+			<error_detail_invalid_ticket_details>					Missing Ticket not added due to invalid ticket details.:	 		</error_detail_invalid_ticket_details>
+			<error_parameter_invalid_ticket_details>				tracking_id									 								</error_parameter_invalid_ticket_details>
+			
+			<error_code_1003>										1003 																	</error_code_1003>
+			<error_title_missing_ticket_claim>						Missing Ticket claims only for transactions made in the last 10 days 	</error_title_missing_ticket_claim>
+			<error_detail_missing_ticket_claim>						Missing Ticket claims only for transactions made in the last 10 days: 	</error_detail_missing_ticket_claim>
+			<error_parameter_missing_ticket_claim>					click_date									 							</error_parameter_missing_ticket_claim>
+			
+			<error_code_1002>										1002 																	</error_code_1002>
+			<error_title_invalid_date_format>						Invalid Transaction Date Format 										</error_title_invalid_date_format>
+			<error_detail_invalid_date_format>						Invalid Transaction Date Format: 										</error_detail_invalid_date_format>
+			<error_parameter_invalid_date_format>					click_date									 							</error_parameter_invalid_date_format>
+			
+			<error_code_1005>										1005 																																														</error_code_1005>
+			<error_title_raise_ticket_n18_store>					Oops! Unfortunately, during the date of your transaction we were not offering Cashback on the retailer that you have selected. Please email us at dev@pouringpounds.com for any enquiries.	</error_title_raise_ticket_n18_store>
+			
+			<error_code_1010>										1010 																	</error_code_1010>
+			<error_title_doesnt_accept_ticket>						doesn't accepting missing cashback ticket								</error_title_doesnt_accept_ticket>
+			
+			<error_code_1011>										1011 																																														</error_code_1011>
+			<error_title_tracks_within>								tracks within 72 hours. If after this time your Cashback has not tracked please raise a Missing Cashback Ticket.																			</error_title_tracks_within>
+			
+			<error_code_1006>										1006 																																														</error_code_1006>
+			<error_title_missing_ticket_already_raised>				This order has already been submitted as a Missing Ticket. Our customer care team is working hard to resolve this for you at the earliest, though it can take up to 45 days in some cases. 	</error_title_missing_ticket_already_raised>
+			
+			<file_text_txt>											file_text.txt												</file_text_txt>
+			<img_less_than_2mb_jpeg>								img_less_than_2mb.jpeg										</img_less_than_2mb_jpeg>
+			<img_less_than_2mb_png>									img_less_than_2mb.png										</img_less_than_2mb_png>
+			<img_less_than_2mb_jpg>									img_less_than_2mb.jpg										</img_less_than_2mb_jpg>
+			<img_more_than_2mb_jpeg>								img_more_than_2mb.jpeg										</img_more_than_2mb_jpeg>
+			<img_more_than_2mb_png>									img_more_than_2mb.png										</img_more_than_2mb_png>
+			<img_more_than_2mb_jpg>									img_more_than_2mb.jpg										</img_more_than_2mb_jpg>
+			<pdf_less_than_2mb_pdf>									pdf_less_than_2mb.pdf										</pdf_less_than_2mb_pdf>
+			<pdf_more_than_2mb_pdf>									pdf_more_than_2mb.pdf										</pdf_more_than_2mb_pdf>
+			<img_corrupted>											img_corrupted.jpg											</img_corrupted>
+			<img_less_than_2mb_jpeg_with_space>						img less than 2mb.jpeg										</img_less_than_2mb_jpeg_with_space>
+	</raise_ticket>
+
+	<ticket>
+			<total_records>											1															</total_records>
+			<page_number>											1															</page_number>
+			<page_size>												10															</page_size>
+			
+			<total_records_3>										3															</total_records_3>
+			
+			<received>												Received													</received>
+			<sent_to_retailer>										Sent to retailer											</sent_to_retailer>
+			<resolved>												Resolved													</resolved>
+			
+			<pagenumber>											?page[number]=1												</pagenumber>
+			<pagesize>												page[size]=10												</pagesize>
+			
+			<pagenumber_2>											?page[number]=2												</pagenumber_2>
+			<pagesize_1>											page[size]=1												</pagesize_1>
+			
+			<page_number_2>											2															</page_number_2>
+			<page_size_1>											1															</page_size_1>
+			
+			<pagenumber_query_parameter>							?page[number]=												</pagenumber_query_parameter>
+			<pagesize_query_parameter>								page[size]=													</pagesize_query_parameter>
+			
+			<error_status_400>										400 														</error_status_400>
+			<error_code_11001>										11001 														</error_code_11001>
+			<error_title_invalid_page_number_size>					Invalid parameter - page number or size 					</error_title_invalid_page_number_size>
+			<error_detail_invalid_page_number_size>					Invalid parameter - page number or size => 					</error_detail_invalid_page_number_size>
+			<error_pointer_invalid_page_number>						page[number] 												</error_pointer_invalid_page_number>
+			<error_pointer_invalid_page_size>						page[size] 													</error_pointer_invalid_page_size>
+	</ticket>
+
+	<ticket_details>
+			<type_reply>											reply														</type_reply>
+			<from>													Customer services											</from>
+			<from_user>												User														</from_user>
+	</ticket_details>
+
+	<ticket_reply>
+			<message>												Your cashback query reply has been submitted.				</message>
+			
+			<status_reply_message_required>							422															</status_reply_message_required>
+			<title_reply_message_required>							Invalid Attribute											</title_reply_message_required>
+			<detail_reply_message_required>							The reply message field is required.						</detail_reply_message_required>
+			<pointer_reply_message_required>						/data/attributes/reply_message								</pointer_reply_message_required>
+			
+			<status_cb_not_found>									400															</status_cb_not_found>
+			<code_cb_not_found>										1001														</code_cb_not_found>
+			<title_cb_not_found>									Cashback Ticket details was not found!						</title_cb_not_found>
+			<detail_cb_not_found>									Cashback Ticket details was not found!						</detail_cb_not_found>
+			<parameter_cb_not_found>								ticket														</parameter_cb_not_found>
+			
+			<status_reply_message_6000_character>					422															</status_reply_message_6000_character>
+			<title_reply_message_6000_character>					Invalid Attribute											</title_reply_message_6000_character>
+			<detail_reply_message_6000_character>					The reply message may not be greater than 6000 characters.	</detail_reply_message_6000_character>
+			<pointer_reply_message_6000_character>					/data/attributes/reply_message								</pointer_reply_message_6000_character>
+			
+			<status_reply_message_invalid_character>				422															</status_reply_message_invalid_character>
+			<title_reply_message_invalid_character>					Invalid Attribute											</title_reply_message_invalid_character>
+			<detail_reply_message_invalid_character>				The reply message format is invalid.						</detail_reply_message_invalid_character>
+			<pointer_reply_message_invalid_character>				/data/attributes/reply_message								</pointer_reply_message_invalid_character>
+	</ticket_reply>
+
+	<referral_network>
+			<referral_type>											referral													</referral_type>
+			
+			<total_records>											1															</total_records>
+			<page_number>											1															</page_number>
+			<page_size>												10															</page_size>
+			
+			<pagenumber_query_parameter>							?page[number]=												</pagenumber_query_parameter>
+			<pagesize_query_parameter>								page[size]=													</pagesize_query_parameter>
+			
+			<status_active>											Active														</status_active>
+			
+			<status_inactive>										In Active													</status_inactive>
+	</referral_network>
+
+	<testimonial>
+			<testimonial_type>										testimonial													</testimonial_type>
+			
+			<ratings_1>												1															</ratings_1>
+			<ratings_2>												2															</ratings_2>
+			<ratings_3>												3															</ratings_3>
+			<ratings_4>												4															</ratings_4>
+			<ratings_5>												5															</ratings_5>
+			<ratings_6>												6															</ratings_6>
+			
+			<message>												Your testimonial has been submitted							</message>
+			
+			<status_422>											422															</status_422>
+			<title_invalid_attribute>								Invalid Attribute											</title_invalid_attribute>
+			
+			
+			<detail_ratings_must_be_nos>							The rating must be an integer.								</detail_ratings_must_be_nos>
+			<detail_must_be_bw_1_to_5>								The rating must be between 1 and 5.							</detail_must_be_bw_1_to_5>
+			<detail_ratings_required>								The rating field is required.								</detail_ratings_required>
+			<pointer_ratings>										/data/attributes/rating										</pointer_ratings>
+			
+			<detail_testimonial_not_greater_than_750>				The testimonial may not be greater than 750 characters.		</detail_testimonial_not_greater_than_750>
+			<detail_testimonials_required>							The testimonial field is required.							</detail_testimonials_required>
+			<pointer_testimonial>									/data/attributes/testimonial								</pointer_testimonial>
+			
+			<detail_ipaddress_invalid>								The ip address must be a valid IP address.					</detail_ipaddress_invalid>
+			<detail_ipaddress_required>								The ip address field is required.							</detail_ipaddress_required>
+			<pointer_ipaddress>										/data/attributes/ip_address									</pointer_ipaddress>
+			
+	</testimonial>
+
+	<my_activity>
+			<activity_type>											activity													</activity_type>
+			<latest_updated>										4 days ago													</latest_updated>
+			<click_days>											4															</click_days>
+			
+			<merchant_accept_ticket_true>							true														</merchant_accept_ticket_true>
+			<merchant_accept_ticket_false>							false														</merchant_accept_ticket_false>
+	</my_activity>
+
+	<shared_activity>
+			<type_sharedlist>										sharedlist													</type_sharedlist>
+			<type_shredlist>										shredlist													</type_shredlist>
+	</shared_activity>
+
+	<create_share_link>
+			<type_create_share_link>								sharelink																			</type_create_share_link>
+			<type_user>												user																				</type_user>
+			<shorten_domain_urls>									bit.do,bit.ly,tiny.cc,rebrand.ly,j.mp,amzn.to,clnk.in,tinyurl.com,urlzs.com,fkrt.it </shorten_domain_urls>
+			<AmazonNew>												Amazon New																			</AmazonNew>
+			<FlipKart>												Flipkart																			</FlipKart>
+			
+			<non_working_domain_url_1>								https://www.google.com										</non_working_domain_url_1>
+			<non_working_domain_url_2>								https://www.amazon.comm										</non_working_domain_url_2>
+			<non_working_domain_url_3>								https://www.flipkart.co										</non_working_domain_url_3>
+			<non_working_domain_url_4>								https://www.cashkaro.com									</non_working_domain_url_4>
+			<non_working_domain_url_5>								https://www.myntraa.com										</non_working_domain_url_5>
+			<non_working_domain_url_6>								http://fkrt.ito/3IH~b2NNNN									</non_working_domain_url_6>
+			<non_working_domain_url_7>								https://amzn.tio/2FphiBB									</non_working_domain_url_7>
+			<non_working_domain_url_8>								https://www.45amazon.in										</non_working_domain_url_8>
+			<non_working_domain_url_9>								https://amazon.org											</non_working_domain_url_9>
+			
+			<status_invalid_retailer_url>							400															</status_invalid_retailer_url>
+			<code_invalid_retailer_url>								14001														</code_invalid_retailer_url>
+			<title_invalid_retailer_url>							Invalid retailer URL										</title_invalid_retailer_url>
+			<detail_invalid_retailer_url>							Sorry. We are not working with this retailer				</detail_invalid_retailer_url>
+			<parameter_invalid_retailer_url>						link														</parameter_invalid_retailer_url>
+
+			<status_too_may_url>									400															</status_too_may_url>
+			<code_too_may_url>										14000														</code_too_may_url>
+			<title_too_may_url>										Too many retailer URLs in pasted link						</title_too_may_url>
+			<detail_too_may_url>									Too many retailer URLs in pasted link						</detail_too_may_url>
+			<parameter_too_may_url>									link														</parameter_too_may_url>
+			
+			<invalid_link_format_1>									55https://..com												</invalid_link_format_1>
+			<invalid_link_format_2>									http//:..cmo												</invalid_link_format_2>
+			<invalid_link_format_3>									127.0.0.1													</invalid_link_format_3>
+			<invalid_link_format_4>									hptts://amazon.com											</invalid_link_format_4>
+			<invalid_link_format_5>									https://www. amazon .in										</invalid_link_format_5>
+			<invalid_link_format_6>									https:// www.amazon.in										</invalid_link_format_6>
+			<invalid_link_format_7>									https://www.udemy.in???										</invalid_link_format_7>
+			<invalid_link_format_8>									amazon.in													</invalid_link_format_8>
+			<invalid_link_format_9>									http://www..com												</invalid_link_format_9>
+			
+			<status_invalid_link_format>							422															</status_invalid_link_format>
+			<title_invalid_link_format>								Invalid Attribute											</title_invalid_link_format>
+			<detail_invalid_link_format>							The link format is invalid.									</detail_invalid_link_format>
+			<pointer_invalid_link_format>							/data/attributes/link										</pointer_invalid_link_format>
+	
+			<shortenbitly_google_Invalid>							http://bit.ly/2UCExCF 										</shortenbitly_google_Invalid>
+			<shortentinycc_google_Invalid>							http://tiny.cc/e3634y 										</shortentinycc_google_Invalid>
+			<shortenbitdo_google_Invalid>							http://bit.do/ePaCA 										</shortenbitdo_google_Invalid>
+			<shortenrebrandly_google_Invalid>						https://rebrand.ly/e8e42 									</shortenrebrandly_google_Invalid>
+			<shortenurlZs_google_Invalid>							https://urlzs.com/TkAL 										</shortenurlZs_google_Invalid>
+			<shortentinyURL_google_Invalid>							http://tinyurl.com/y6wpyvl7 								</shortentinyURL_google_Invalid>
+	
+			<status_store_id_must_be_integer>						422															</status_store_id_must_be_integer>
+			<title_store_id_must_be_integer>						Invalid Attribute											</title_store_id_must_be_integer>
+			<detail_store_id_must_be_integer>						The storeid must be an integer.								</detail_store_id_must_be_integer>
+			<pointer_store_id_must_be_integer>						/data/attributes/storeid									</pointer_store_id_must_be_integer>
+			
+			<status_voucher_id_must_be_integer>						422															</status_voucher_id_must_be_integer>
+			<title_voucher_id_must_be_integer>						Invalid Attribute											</title_voucher_id_must_be_integer>
+			<detail_voucher_id_must_be_integer>						The voucherid must be an integer.							</detail_voucher_id_must_be_integer>
+			<pointer_voucher_id_must_be_integer>					/data/attributes/voucherid									</pointer_voucher_id_must_be_integer>
+			
+			<status_pdt_id_format_invalid>							422															</status_pdt_id_format_invalid>
+			<title_pdt_id_format_invalid>							Invalid Attribute											</title_pdt_id_format_invalid>
+			<detail_pdt_id_format_invalid>							The productid format is invalid.							</detail_pdt_id_format_invalid>
+			<pointer_pdt_id_format_invalid>							/data/attributes/productid									</pointer_pdt_id_format_invalid>
+	</create_share_link>
+
+	<create_external_profit_link>
+			<type_earn_link>										earnlink													</type_earn_link>
+			<type_create_external_profit_link>						createexternalearnlink										</type_create_external_profit_link>
+			
+			<api_key_value>											apikey=ppounds_keyauth										</api_key_value>
+			
+			<status_user_id_required>								422															</status_user_id_required>
+			<title_user_id_required>								Invalid Attribute											</title_user_id_required>
+			<detail_user_id_required>								The userid field is required.								</detail_user_id_required>
+			<pointer_user_id_required>								/data/attributes/userid										</pointer_user_id_required>
+			
+			<status_link_required>									422															</status_link_required>
+			<title_link_required>									Invalid Attribute											</title_link_required>
+			<detail_link_required>									The link field is required.									</detail_link_required>
+			<pointer_link_required>									/data/attributes/link										</pointer_link_required>
+			
+			<status_user_id_in_integer>								422															</status_user_id_in_integer>
+			<title_user_id_in_integer>								Invalid Attribute											</title_user_id_in_integer>
+			<detail_user_id_in_integer>								The userid must be an integer.								</detail_user_id_in_integer>
+			<pointer_user_id_in_integer>							/data/attributes/userid										</pointer_user_id_in_integer>
+			
+			<error_message_invalid_credentials>						Invalid authentication credentials							</error_message_invalid_credentials>
+			
+			<error_message_no_api_key_found>						No API key found in request									</error_message_no_api_key_found>
+	</create_external_profit_link>
+	
+	</restAPITestdata>
+</testdata>
